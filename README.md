@@ -18,6 +18,10 @@ Sample Data: OSD-207-samples.csv
 
 Import the two files and create a data frame in which each row is an individual sample (mouse) and the columns are the samples, their sample characteristics (including space flight and Genotype.
 
+Your dataset should look something like this (click to enlarge)
+![image](https://user-images.githubusercontent.com/47755288/216450492-9c483482-cb07-4555-ac29-c824086c65fb.png)
+
+
 ### Step 2 (5 points)
 
 There are 13,885 genes! We want to narrow our focus to genes that have a difference between space flight and ground control. So let's identify all of the genes that have a difference in mean expression between space flight and ground control (regardless of genotype)
