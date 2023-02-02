@@ -56,7 +56,7 @@ Let's check our assumptions for this dataset to make sure we should continue wit
 
 ### 4 Investigate the gene FBgn0033687 (6 points)
 
-Let's look at another gene FBgn0033687. Repeate the above analyses. 
+Let's look at another gene FBgn0033687. Repeat the above analyses. 
 
 
 1 - Conduct the Bartlett test of homogeneity of variances. Does our dataset violate the assumption of homogeneity?
