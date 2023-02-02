@@ -41,7 +41,7 @@ Let's check our assumptions for this dataset to make sure we should continue wit
 
 1 - Conduct the Bartlett test of homogeneity of variances. Does our dataset violate the assumption of homogeneity?
 
-2 - Conduct the Shapiro-Wilks normality test on our gene expression values. Does our dataset violate the assumption of normality?
+2 - Conduct the Shapiro-Wilks normality test on the residuals of the gene expression values. Does our dataset violate the assumption of normality?
 
 3 - Create a boxplot of the expression of FBgn0038749 between space flight and ground control 
 
@@ -61,7 +61,7 @@ Let's look at another gene FBgn0033687. Repeat the above analyses.
 
 1 - Conduct the Bartlett test of homogeneity of variances. Does our dataset violate the assumption of homogeneity?
 
-2 - Conduct the Shapiro-Wilks normality test on our gene expression values. Does our dataset violate the assumption of normality?
+2 - Conduct the Shapiro-Wilks normality test on the residuals of the gene expression values. Does our dataset violate the assumption of normality?
 
 3 - Create a boxplot of the expression of FBgn0038749 between space flight and ground control 
 
