@@ -59,7 +59,7 @@ Report the total number of genes with a statistically significant difference in 
 &nbsp;
 &nbsp;
 
-## 3 Investigate the gene FBgn0038749 
+# Step 3 Investigate the gene FBgn0038749 
 
 You should have gotten the gene FBgn0038749 as one with a statistically significant difference in means for space flight and ground control 
 
