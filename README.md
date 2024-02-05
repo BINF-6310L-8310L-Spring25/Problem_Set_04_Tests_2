@@ -34,7 +34,7 @@ How many flies have the **genotype "CS"** and **gene expression for the gene "FB
 
 There are 13,885 genes! We want to narrow our focus to genes that differ between space flight and ground control. So, let's identify all of the genes that have a difference in mean expression between space flight and ground control (regardless of genotype)
 
-## Step 2.1 Multiple Tests Correction. 
+### Step 2.1 Multiple Tests Correction. 
 
 Let's use the Bonferroni adjustment for our p-value. What is the adjusted p-value for 13,885 tests?
 
@@ -44,7 +44,7 @@ Report the adjusted p-value for this test.
 
 &nbsp;
 
-## Step 2.2 - Test all genes using ANOVA
+### Step 2.2 - Test all genes using ANOVA
 
 We want to test all 13,885 genes. To do this we want to create a loop that will conduct this many ANOVAs
 
@@ -67,7 +67,7 @@ Let's check our assumptions for this dataset to make sure we should continue wit
 &nbsp;
 
 
-## Step 3.1 Visualize our data
+### Step 3.1 Visualize our data
 
 Create a boxplot of the expression of FBgn0038749 to visualize the difference in expression between space flight and ground control.
 
@@ -75,7 +75,7 @@ Create a boxplot of the expression of FBgn0038749 to visualize the difference in
 Create the boxplot
 
 &nbsp;
-## Step 3.2 Test Variances
+### Step 3.2 Test Variances
 
 Conduct the Bartlett test of homogeneity of variances. 
 
@@ -84,7 +84,7 @@ Conduct the Bartlett test of homogeneity of variances.
 Does our dataset violate the assumption of homogeneity?
 &nbsp;
 
-## Step 3.4 Test residuals for normality
+### Step 3.4 Test residuals for normality
 
 Conduct the Shapiro-Wilks normality test on the residuals from our ANOVA of space flight vs  Ground Control for gene FBgn0038749
 
@@ -92,7 +92,7 @@ Conduct the Shapiro-Wilks normality test on the residuals from our ANOVA of spac
 Does our dataset violate the assumption of normality?
 
 &nbsp;
-## Step 3.5 Test for the impact of genotype 
+### Step 3.5 Test for the impact of genotype 
 
 You are curious if genotype has influenced your results. Conduct 2 Two-Way ANOVAs using both spaceflight/control and genotype. In one do not predict interaction between the variables. In the second allow for interaction between the variables. 
 
@@ -103,31 +103,63 @@ Is there an interaction between space-flight/ground-control and genotype?
 
 &nbsp;
 
-## Step 3.6 Find out the gene name
+### Step 3.6 Find out the gene name
 
 Refer to the original input data to find the gene name associated with FBgn0038749
 
-## Question 8 ( 1 point
+## Question 8 (1 point)
 What is the gene name of FBgn0038749
 
 
 
 
-### 4 Investigate the gene FBgn0033687 (6 points)
+# Step 4 Investigate the gene FBgn0033687
 
 Let's look at another gene FBgn0033687. Repeat the above analyses. 
 
+### Step 3.1 Visualize our data
 
-1 - Conduct the Bartlett test of homogeneity of variances. Does our dataset violate the assumption of homogeneity?
+Create a boxplot of the expression of FBgn0033687 to visualize the difference in expression between space flight and ground control.
 
-2 - Conduct the Shapiro-Wilks normality test on the residuals of the gene expression values. Does our dataset violate the assumption of normality?
+## Question 9 (1 point)
+Create the boxplot
 
-3 - Create a boxplot of the expression of FBgn0038749 between space flight and ground control 
+&nbsp;
+### Step 3.2 Test Variances
 
-4 - You are curious if genotype has influenced your results. Conduct 2 Two-Way ANOVAs using both spaceflight/control and genotype. In one do not predict interaction between the variables. In the second allow for interaction between the variables. 
+Conduct the Bartlett test of homogeneity of variances. 
 
-5 - Generate and use the AIC table to report the best model. Is there an interaction between space flight and genotype?
+## Question 10 (1 point)
 
-6 - What is the gene name of FBgn0033687
+Does our dataset violate the assumption of homogeneity?
+&nbsp;
+
+### Step 3.4 Test residuals for normality
+
+Conduct the Shapiro-Wilks normality test on the residuals from our ANOVA of space flight vs  Ground Control for gene FBgn0033687
+
+## Question 11 (1 point)
+Does our dataset violate the assumption of normality?
+
+&nbsp;
+### Step 3.5 Test for the impact of genotype 
+
+You are curious if genotype has influenced your results. Conduct 2 Two-Way ANOVAs using both spaceflight/control and genotype. In one do not predict interaction between the variables. In the second allow for interaction between the variables. 
+
+Generate and use the AIC table to report the best model. 
+
+## Question 12 (1 point)
+Is there an interaction between space-flight/ground-control and genotype?
+
+&nbsp;
+
+### Step 3.6 Find out the gene name
+
+Refer to the original input data to find the gene name associated with FBgn0033687
+
+## Question 13 (1 point)
+What is the gene name of FBgn0033687
+
+
 
 ### Step 5 - knit and upload your document (1 point)
