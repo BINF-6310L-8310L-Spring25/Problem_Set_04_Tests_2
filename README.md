@@ -14,13 +14,18 @@ There are two files:
 Expression data with gene info: GLDS-207_rna_seq_ERCCnorm_differential_expression.csv 
 Sample Data: OSD-207-samples.csv
 
-### Step 1 (2 points)
+### Step 1
 
-Import the two files and create a data frame in which each row is an individual sample (mouse) and the columns are the samples, their sample characteristics (including space flight and Genotype.
+Import the two files and create a data frame in which each row is an individual sample (fly), and the columns are the samples (gene expression data) and their sample characteristics (including space flight and Genotype)
+
+
 
 Your dataset should look something like this (click to enlarge)
 ![image](https://user-images.githubusercontent.com/47755288/216450492-9c483482-cb07-4555-ac29-c824086c65fb.png)
 
+# Lab Question 1 (1 point)
+
+How many flies have the **genotype "CS"** and **gene expression for the gene "FBgn0000015" greater than 1**. 
 
 ### Step 2 (5 points)
 
