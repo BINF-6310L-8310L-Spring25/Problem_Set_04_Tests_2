@@ -42,6 +42,8 @@ Let's use the Bonferroni adjustment for our p-value. What is the adjusted p-valu
 
 Report the adjusted p-value for this test.
 
+&nbsp;
+
 ## Step 2.2 - Test all genes using ANOVA
 
 We want to test all 13,885 genes. To do this we want to create a loop that will conduct this many ANOVAs
