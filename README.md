@@ -23,45 +23,90 @@ Import the two files and create a data frame in which each row is an individual 
 Your dataset should look something like this (click to enlarge)
 ![image](https://user-images.githubusercontent.com/47755288/216450492-9c483482-cb07-4555-ac29-c824086c65fb.png)
 
-## Lab Question 1 (1 point)
+## Question 1 (1 point)
 
 How many flies have the **genotype "CS"** and **gene expression for the gene "FBgn0000015" greater than 1**. 
 
 &nbsp;
 &nbsp;
 
-### Step 2 (5 points)
+# Step 2
 
-There are 13,885 genes! We want to narrow our focus to genes that have a difference between space flight and ground control. So let's identify all of the genes that have a difference in mean expression between space flight and ground control (regardless of genotype)
+There are 13,885 genes! We want to narrow our focus to genes that differ between space flight and ground control. So, let's identify all of the genes that have a difference in mean expression between space flight and ground control (regardless of genotype)
 
-1 - Multiple Tests Correction. Let's use the Bonferroni adjustment for our p-value. What is the adjusted p-value for 13,885 tests?
+## Step 2.1 Multiple Tests Correction. 
 
-2 - Create a loop that will generate a data frame containing just the space flight and gene expression information 
+Let's use the Bonferroni adjustment for our p-value. What is the adjusted p-value for 13,885 tests?
 
-3 - Within this loop, conduct a One Way Anova to test for a difference in means 
+## Question 2 (1 point)
 
-4 - Save the positions or gene names for the One Way Anova tests with a Pr(>F) less than our adjusted p-value 
+Report the adjusted p-value for this test.
 
-5 - Report the total number of genes with a statistically significant difference in mean gene expression
+## Step 2.2 - Test all genes using ANOVA
 
+We want to test all 13,885 genes. To do this we want to create a loop that will conduct this many ANOVAs
 
-### 3 Investigate the gene FBgn0038749 (6 points)
+Within this loop, conduct a One Way Anova to test for a difference in means 
+
+Save the positions or gene names for the One Way Anova tests with a Pr(>F) less than our adjusted p-value 
+
+## Question 3 (2 points)
+
+Report the total number of genes with a statistically significant difference in mean gene expression.
+
+&nbsp;
+&nbsp;
+
+## 3 Investigate the gene FBgn0038749 
 
 You should have gotten the gene FBgn0038749 as one with a statistically significant difference in means for space flight and ground control 
 
 Let's check our assumptions for this dataset to make sure we should continue with our analysis! 
+&nbsp;
 
-1 - Conduct the Bartlett test of homogeneity of variances. Does our dataset violate the assumption of homogeneity?
 
-2 - Conduct the Shapiro-Wilks normality test on the residuals of the gene expression values. Does our dataset violate the assumption of normality?
+## Step 3.1 Visualize our data
 
-3 - Create a boxplot of the expression of FBgn0038749 between space flight and ground control 
+Create a boxplot of the expression of FBgn0038749 to visualize the difference in expression between space flight and ground control.
 
-4 - You are curious if genotype has influenced your results. Conduct 2 Two-Way ANOVAs using both spaceflight/control and genotype. In one do not predict interaction between the variables. In the second allow for interaction between the variables. 
+## Question 4 (1 point)
+Create the boxplot
 
-5 - Generate and use the AIC table to report the best model. Is there an interaction between space flight and genotype?
+&nbsp;
+## Step 3.2 Test Variances
 
-6 - What is the gene name of FBgn0038749
+Conduct the Bartlett test of homogeneity of variances. 
+
+## Question 5 (1 point)
+
+Does our dataset violate the assumption of homogeneity?
+&nbsp;
+
+## Step 3.4 Test residuals for normality
+
+Conduct the Shapiro-Wilks normality test on the residuals from our ANOVA of space flight vs  Ground Control for gene FBgn0038749
+
+## Question 6 (1 point)
+Does our dataset violate the assumption of normality?
+
+&nbsp;
+## Step 3.5 Test for the impact of genotype 
+
+You are curious if genotype has influenced your results. Conduct 2 Two-Way ANOVAs using both spaceflight/control and genotype. In one do not predict interaction between the variables. In the second allow for interaction between the variables. 
+
+Generate and use the AIC table to report the best model. 
+
+## Question 7 (1 point)
+Is there an interaction between space-flight/ground-control and genotype?
+
+&nbsp;
+
+## Step 3.6 Find out the gene name
+
+Refer to the original input data to find the gene name associated with FBgn0038749
+
+## Question 8 ( 1 point
+What is the gene name of FBgn0038749
 
 
 
