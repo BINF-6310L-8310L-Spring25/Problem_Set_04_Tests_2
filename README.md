@@ -59,9 +59,9 @@ Report the total number of genes with a statistically significant difference in 
 &nbsp;
 &nbsp;
 
-# Step 3 Investigate the gene FBgn0038749 
+# Step 3 Investigate the gene FBgn0043783 
 
-You should have gotten the gene FBgn0038749 as one with a statistically significant difference in means for space flight and ground control 
+You should have gotten the gene FBgn0043783 as one with a statistically significant difference in means for space flight and ground control 
 
 Let's check our assumptions for this dataset to make sure we should continue with our analysis! 
 &nbsp;
@@ -69,7 +69,7 @@ Let's check our assumptions for this dataset to make sure we should continue wit
 
 ### Step 3.1 Visualize our data
 
-Create a boxplot of the expression of FBgn0038749 to visualize the difference in expression between space flight and ground control.
+Create a boxplot of the expression of FBgn0043783 to visualize the difference in expression between space flight and ground control.
 
 ## Question 4 (1 point)
 Create the boxplot
@@ -86,7 +86,7 @@ Does our dataset violate the assumption of homogeneity?
 
 ### Step 3.4 Test residuals for normality
 
-Conduct the Shapiro-Wilks normality test on the residuals from our ANOVA of space flight vs  Ground Control for gene FBgn0038749
+Conduct the Shapiro-Wilks normality test on the residuals from our ANOVA of space flight vs  Ground Control for gene FBgn0043783
 
 ## Question 6 (1 point)
 Does our dataset violate the assumption of normality?
@@ -94,32 +94,32 @@ Does our dataset violate the assumption of normality?
 &nbsp;
 ### Step 3.5 Test for the impact of genotype 
 
-You are curious if genotype has influenced your results. Conduct 2 Two-Way ANOVAs using both spaceflight/control and genotype. In one do not predict interaction between the variables. In the second allow for interaction between the variables. 
+You are curious if genotype has influenced your results. Conduct 3 Two-Way ANOVAs using both spaceflight/control and/or genotype. In one do not predict interaction between the variables. In the second allow for interaction between the variables. Then compare these to the model without genotype. 
 
 Generate and use the AIC table to report the best model. 
 
 ## Question 7 (1 point)
-Is there an interaction between space-flight/ground-control and genotype?
+Is there an interaction between space-flight/ground-control and genotype? What is the AIC of the best model?
 
 &nbsp;
 
 ### Step 3.6 Find out the gene name
 
-Refer to the original input data to find the gene name associated with FBgn0038749
+Refer to the original input data to find the gene name associated with FBgn0043783
 
 ## Question 8 (1 point)
-What is the gene name of FBgn0038749
+What is the gene name of FBgn0043783
 
 
 
 
-# Step 4 Investigate the gene FBgn0033687
+# Step 4 Investigate the gene FBgn0016119
 
-Let's look at another gene FBgn0033687. Repeat the above analyses. 
+Let's look at another gene FBgn0016119. Repeat the above analyses. 
 
 ### Step 3.1 Visualize our data
 
-Create a boxplot of the expression of FBgn0033687 to visualize the difference in expression between space flight and ground control.
+Create a boxplot of the expression of FBgn0016119 to visualize the difference in expression between space flight and ground control.
 
 ## Question 9 (1 point)
 Create the boxplot
@@ -136,7 +136,7 @@ Does our dataset violate the assumption of homogeneity?
 
 ### Step 3.4 Test residuals for normality
 
-Conduct the Shapiro-Wilks normality test on the residuals from our ANOVA of space flight vs  Ground Control for gene FBgn0033687
+Conduct the Shapiro-Wilks normality test on the residuals from our ANOVA of space flight vs  Ground Control for gene FBgn0016119
 
 ## Question 11 (1 point)
 Does our dataset violate the assumption of normality?
@@ -144,7 +144,7 @@ Does our dataset violate the assumption of normality?
 &nbsp;
 ### Step 3.5 Test for the impact of genotype 
 
-You are curious if genotype has influenced your results. Conduct 2 Two-Way ANOVAs using both spaceflight/control and genotype. In one do not predict interaction between the variables. In the second allow for interaction between the variables. 
+You are curious if genotype has influenced your results. Conduct 3 Two-Way ANOVAs using both spaceflight/control and/or genotype. In one do not predict interaction between the variables. In the second allow for interaction between the variables. Then compare these to the model without genotype. 
 
 Generate and use the AIC table to report the best model. 
 
@@ -155,10 +155,10 @@ Is there an interaction between space-flight/ground-control and genotype?
 
 ### Step 3.6 Find out the gene name
 
-Refer to the original input data to find the gene name associated with FBgn0033687
+Refer to the original input data to find the gene name associated with FBgn0016119
 
 ## Question 13 (1 point)
-What is the gene name of FBgn0033687
+What is the gene name of FBgn0016119
 
 
 
