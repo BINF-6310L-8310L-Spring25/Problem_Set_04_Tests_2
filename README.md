@@ -94,7 +94,7 @@ Does our dataset violate the assumption of normality?
 &nbsp;
 ### Step 3.5 Test for the impact of genotype 
 
-You are curious if genotype has influenced your results. Conduct 3 Two-Way ANOVAs using both spaceflight/control and/or genotype. In one do not predict interaction between the variables. In the second allow for interaction between the variables. Then compare these to the model without genotype. 
+You are curious if genotype has influenced your results. Conduct 3 Two-Way ANOVAs using both spaceflight/control and/or genotype. In one, allow for a multiplicative interaction between the variables. The second allows for additive interaction between the variables. Then compare these to the model without genotype. 
 
 Generate and use the AIC table to report the best model. 
 
@@ -163,3 +163,4 @@ What is the gene name of FBgn0016119
 
 
 ### Step 5 - knit and upload your document (1 point)
+Make sure to upload the knitted pdf or html file labeled with your name
